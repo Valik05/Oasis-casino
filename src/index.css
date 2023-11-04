@@ -1,0 +1,111 @@
+@font-face {
+  font-family: 'MullerLight';
+  font-weight: 100 900;
+  font-display: swap;
+  font-style: normal;
+  src: url('./MullerLight.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'MullerRegular';
+  font-weight: 100 900;
+  font-display: swap;
+  font-style: normal;
+  src: url('./MullerRegular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'MullerMedium';
+  font-weight: 100 900;
+  font-display: swap;
+  font-style: normal;
+  src: url('./MullerMedium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'MullerBold';
+  font-weight: 100 900;
+  font-display: swap;
+  font-style: normal;
+  src: url('./MullerBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'CopperplateRegular';
+  font-weight: 100 900;
+  font-display: swap;
+  font-style: normal;
+  src: url('./copperplate.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'CopperplateLight';
+  font-weight: 100 900;
+  font-display: swap;
+  font-style: normal;
+  src: url('./copperplate_light.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'CopperplateBold';
+  font-weight: 100 900;
+  font-display: swap;
+  font-style: normal;
+  src: url('./copperplate_bold.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'SF UI Text Light';
+  font-style: normal;
+  font-weight: normal;
+  src: local('SF UI Text Light'), url('SFUIText-Light.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'SF UI Text Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('SF UI Text Regular'), url('SFUIText-Regular.woff') format('woff');
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  background: #222;
+  color: #FFFFFF;
+}
+
+.App{
+  overflow: hidden;
+  position: relative;
+}
+
+.modal_active{
+  height: 706px;
+}
+
+@media (max-width: 1450px) {
+  .modal_active{
+    height: 1000px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .modal_active{
+    height: 1366px;
+  }
+}
+
+
+@media (max-width: 800px) {
+  .modal_active{
+    height: 1133px;
+  }
+}
+
+@media (max-width: 400px) {
+  .modal_active{
+    height: 852px;
+  }
+}
+

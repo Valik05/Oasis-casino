@@ -1,0 +1,606 @@
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.slider {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sliderContent {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#sliderCirclesForPhone {
+    display: none;
+}
+
+.currentSliderImg {
+    width: 50%;
+    height: 252px;
+    flex-shrink: 0;
+    border-radius: 30px;
+    background: #FFF;
+    filter: blur(0.3px);
+    display: flex;
+    justify-content: space-between;
+}
+
+.currentSliderImg span {
+    display: flex;
+    align-items: center;
+    padding: 0px 1em;
+}
+
+.currentSliderImg span:nth-child(2n) {
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 1rem;
+}
+
+.sliderImg:first-child {
+    border-radius: 0px 30px 30px 0px;
+}
+
+.sliderImg {
+    width: 20%;
+    height: 252px;
+    flex-shrink: 0;
+    border-radius: 30px 0px 0px 30px;
+    background: rgba(255, 255, 255, 0.27);
+    filter: blur(4px);
+}
+
+.searchBar {
+    display: flex;
+    justify-content: center;
+    font-family: 'MullerRegular', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    line-height: normal;
+    margin-top: 50px;
+}
+
+#searchIconForPhone {
+    display: none;
+}
+
+.searchBarBg {
+    border-radius: 30px;
+    background: #FFF;
+    width: 80%;
+    padding: 15px;
+    display: flex;
+}
+
+.allGamesBtn {
+    display: flex;
+    align-items: center;
+    padding: 10px 14px;
+    font-weight: 700;
+    border-radius: 15px;
+    background: linear-gradient(90deg, #458BDA 0%, #59AFF1 100%);
+    font-family: 'MullerBold', sans-serif;
+}
+
+.allGamesBtn svg {
+    margin-right: 15px;
+}
+
+.allGamesBtn:hover {
+    background: linear-gradient(90deg, #36679e 0%, #4d92c7 100%);
+    cursor: pointer;
+}
+
+.searchBarBg input[type=text] {
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    background-image: url('./searchIcon.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding-left: 50px;
+    border: none;
+    font-family: 'MullerLight', sans-serif;
+    font-weight: 300;
+    color: #000;
+    font-size: 20px;
+    font-style: normal;
+    line-height: normal;
+}
+
+.searchBarBg input::-webkit-input-placeholder {
+    font-family: 'MullerLight', sans-serif;
+    font-weight: 300;
+}
+
+.searchBarBg input[type=text]:focus {
+    border: none;
+    outline: none;
+}
+
+.searchField {
+    margin: 0 1rem 0 1rem;
+    width: 65%;
+    display: flex;
+    align-items: center;
+}
+
+.filterBtn {
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0 1rem;
+    border-radius: 15px;
+    background: linear-gradient(90deg, #458BDA 0%, #59AFF1 100%);
+}
+
+.filterBtn:hover {
+    background: linear-gradient(90deg, #36679e 0%, #4d92c7 100%);
+    cursor: pointer;
+}
+
+.filterBtn span {
+    opacity: 1;
+    font-family: 'MullerBold', sans-serif;
+    font-weight: 700;
+}
+
+.filterBtn span:first-child {
+    opacity: 0.8;
+    font-family: 'MullerRegular', sans-serif;
+}
+
+.gamesContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px
+}
+
+.games {
+    display: flex;
+    width: 82%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.game {
+    margin-bottom: 24px;
+    width: 31.5%;
+    height: 300px;
+    flex-shrink: 0;
+    border-radius: 30px;
+    background: #D9D9D9;
+}
+
+.moreGamesContainer {
+    margin: 50px 0 150px 0;
+}
+
+.moreGames {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 30px;
+    font-family: 'MullerRegular';
+    font-weight: 500;
+}
+
+.arrowInCircleSvg {
+    margin-top: 30px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrowInCircleSvg svg:first-child {
+    position: absolute;
+}
+
+@media (max-width: 1450px) {
+    .top {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .searchBar {
+        margin-top: 32px;
+    }
+
+    .searchBarBg {
+        width: 85%;
+        justify-content: space-between;
+        align-items: center;
+        padding: 14px 21px 14px 28px;
+        border-radius: 6px;
+        background: rgba(95, 102, 118, 0.39);
+    }
+
+    .searchField {
+        margin: 0;
+    }
+
+    .searchIconForPhone {
+        display: flex;
+        width: 30px;
+        height: 35px;
+    }
+
+    .searchBarBg input[type=text] {
+        height: 100%;
+        width: 100%;
+        background: transparent;
+        background-image: none;
+        border: none;
+        color: #FFF;
+        font-family: 'SF UI Text Light';
+        font-size: 24px;
+        padding: 0 0 0 13px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .searchBarBg input::-webkit-input-placeholder {
+        font-family: 'SF UI Text Light', sans-serif;
+        font-weight: 400;
+        color: #FFF;
+    }
+
+    .allGamesBtn {
+        display: none;
+    }
+
+    .filterBtn {
+        width: auto;
+        font-size: 16px;
+        border-radius: 11.371px;
+        padding: 15px 18px 12px 18px;
+    }
+
+    .filterBtn span {
+        font-family: 'SF UI Text Regular', sans-serif;
+        font-weight: 500;
+    }
+
+    .filterBtn span:first-child {
+        margin-right: 7px;
+        opacity: 1;
+        font-family: 'SF UI Text Light', sans-serif;
+        font-weight: 400;
+    }
+
+    .slider {
+        margin-top: 58px;
+    }
+
+    .sliderContent {
+        align-items: center;
+    }
+
+    .slider svg {
+        display: none;
+    }
+
+    .currentSliderImg {
+        width: 50%;
+        height: 310px;
+        flex-shrink: 0;
+        border-radius: 6.432px;
+        background: #D9D9D9;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .sliderImg:first-child {
+        border-radius: 0px 6.432px 6.432px 0px;
+    }
+
+    .sliderImg {
+        width: 20%;
+        height: 285.56px;
+        flex-shrink: 0;
+        border-radius: 6.432px 0 0 6.432px;
+        background: #D9D9D9;
+        filter: blur(0px);
+    }
+
+    #sliderCirclesForPhone {
+        display: flex;
+        margin-top: 37px;
+        width: 109.545px;
+        height: 15px;
+        flex-shrink: 0;
+    }
+
+    .gamesContainer {
+        margin-top: 73px;
+        margin-bottom: 230px;
+    }
+
+    .games {
+        width: auto;
+        justify-content: space-evenly;
+    }
+
+    .game {
+        width: 407.377px;
+        height: 258.255px;
+        flex-shrink: 0;
+        margin-bottom: 35px;
+        border-radius: 19.966px;
+        background: #D9D9D9;
+    }
+
+    .game:nth-last-child(-n + 9) {
+        display: none;
+    }
+
+    .moreGamesContainer {
+        display: none;
+    }
+}
+
+@media (max-width: 1100px) {
+    .searchBar {
+        margin-top: 26px;
+    }
+
+    .searchBarBg {
+        width: 90%;
+        padding: 10px 15px 11px 18px;
+    }
+
+    .searchIconForPhone {
+        width: 25px;
+        height: 24.355px;
+        flex-shrink: 0;
+    }
+
+    .searchBarBg input[type=text] {
+        font-size: 20px;
+    }
+
+    .filterBtn {
+        font-size: 14px;
+        border-radius: 9.919px;
+        padding: 13px 15px 12px 15px;
+    }
+
+    .filterBtn span:first-child {
+        margin-right: 6px;
+    }
+
+    .slider {
+        margin-top: 44px;
+    }
+
+    .currentSliderImg {
+        height: 241px;
+        border-radius: 5px;
+    }
+
+    .sliderImg:first-child {
+        border-radius: 0px 5px 5px 0px;
+    }
+
+    .sliderImg {
+        height: 222px;
+        border-radius: 5px 0 0 5px;
+    }
+
+    #sliderCirclesForPhone {
+        margin-top: 30px;
+        width: 70px;
+        height: 9.585px;
+    }
+
+    .gamesContainer {
+        margin-top: 44px;
+        margin-bottom: 170px;
+    }
+
+    .game {
+        width: 297.794px;
+        height: 188.785px;
+        margin-bottom: 26px;
+        border-radius: 14.595px;
+    }
+}
+
+@media (max-width: 800px) {
+    .searchBar {
+        margin-top: 0;
+    }
+
+    .searchBarBg {
+        width: 90%;
+        padding: 9px 9px 11px 15px;
+    }
+
+    .searchBarBg input[type=text] {
+        font-size: 16px;
+    }
+
+    .filterBtn {
+        font-size: 11px;
+        border-radius: 7.566px;
+        padding: 10px 12px 8px 12px;
+    }
+
+    .filterBtn span:first-child {
+        margin-right: 5px;
+    }
+
+    .slider {
+        margin-top: 36px;
+    }
+
+    .currentSliderImg {
+        height: 148px;
+    }
+
+    .sliderImg {
+        height: 136px;
+    }
+
+    #sliderCirclesForPhone {
+        margin-top: 20px;
+    }
+
+    .gamesContainer {
+        margin-top: 37px;
+        margin-bottom: 133px;
+    }
+
+    .game {
+        width: 205.855px;
+        height: 144.127px;
+        margin-bottom: 20px;
+        border-radius: 12px;
+    }
+}
+
+@media (max-width: 400px) {
+    .top {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .searchBar {
+        margin-top: 18px;
+    }
+
+    .searchBarBg {
+        align-items: center;
+        padding: 7px 8px 7.50px 15px;
+        border-radius: 6px;
+        background: rgba(95, 102, 118, 0.39);
+    }
+
+    .searchField {
+        margin: 0;
+    }
+
+    .searchIconForPhone {
+        display: flex;
+    }
+
+    .searchBarBg input[type=text] {
+        height: 100%;
+        width: 100%;
+        background: transparent;
+        background-image: none;
+        border: none;
+        color: #FFF;
+        font-family: 'SF UI Text Light';
+        font-size: 14px;
+        padding: 0 0 0 10px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .searchBarBg input::-webkit-input-placeholder {
+        font-family: 'SF UI Text Light', sans-serif;
+        font-weight: 400;
+        color: #FFF;
+    }
+
+    .allGamesBtn {
+        display: none;
+    }
+
+    .filterBtn {
+        width: auto;
+        font-size: 9px;
+        border-radius: 6.173px;
+        padding: 7px 7px 7px 10px;
+    }
+
+    .filterBtn span {
+        font-family: 'SF UI Text Regular', sans-serif;
+        font-weight: 500;
+    }
+
+    .filterBtn span:first-child {
+        margin-right: 3px;
+        opacity: 1;
+        font-family: 'SF UI Text Light', sans-serif;
+        font-weight: 400;
+    }
+
+    .slider {
+        margin-top: 25px;
+    }
+
+    .sliderContent {
+        align-items: center;
+    }
+
+    .slider svg {
+        display: none;
+    }
+
+    .currentSliderImg {
+        width: 50%;
+        height: 112px;
+        flex-shrink: 0;
+        border-radius: 5px;
+        background: #D9D9D9;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .sliderImg:first-child {
+        border-radius: 0px 5px 5px 0px;
+    }
+
+    .sliderImg {
+        width: 20%;
+        height: 103px;
+        flex-shrink: 0;
+        border-radius: 5px 0 0 5px;
+        background: #D9D9D9;
+        filter: blur(0px);
+    }
+
+    #sliderCirclesForPhone {
+        display: flex;
+        margin-top: 11px;
+    }
+
+    .gamesContainer {
+        margin-top: 27px;
+        margin-bottom: 53px;
+    }
+
+    .games {
+        width: auto;
+        justify-content: space-evenly;
+    }
+
+    .game {
+        width: 112.835px;
+        height: 79px;
+        flex-shrink: 0;
+        margin-bottom: 11px;
+        border-radius: 10px;
+        background: #D9D9D9;
+    }
+
+    .game:nth-last-child(-n + 9) {
+        display: none;
+    }
+
+    .moreGamesContainer {
+        display: none;
+    }
+}

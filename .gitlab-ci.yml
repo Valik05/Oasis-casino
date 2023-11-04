@@ -1,0 +1,15 @@
+image: node
+
+pages:
+  stage: build
+  cache:
+    paths:
+      - node_modules/
+  script:
+    - npm install
+    - npm run build --silent
+  artifacts:
+    paths:
+      - build
+  only:
+    - main

@@ -1,0 +1,335 @@
+.currencyContainer {
+    flex-shrink: 0;
+    flex-grow: 0;
+    width: 100%;
+    min-height: 100%;
+    margin: auto;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.currency {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem 3rem 1rem 3rem;
+    width: 23%;
+    flex-shrink: 0;
+    border-radius: 30px;
+    background: #181818;
+}
+
+.topForPhone {
+    display: none;
+}
+
+.currencyExit {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #FFF;
+}
+
+.exitMenu svg {
+    cursor: pointer;
+}
+
+.hint {
+    text-transform: uppercase;
+    margin-top: 1rem;
+    color: #FFF;
+    font-family: 'MullerRegular', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: normal;
+    opacity: 0.54;
+}
+
+.currencyChoice {
+    margin-top: 1rem;
+}
+
+.currencyItem {
+    position: relative;
+    padding: 0.5rem 0.5rem 0.5rem 0;
+    display: flex;
+    align-items: center;
+    font-family: 'MullerRegular';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.borderBottom {
+    position: absolute;
+    z-index: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    width: 100%;
+    top: 3.3rem;
+    left: 0.8rem;
+}
+
+
+.currencyItem span {
+    color: rgba(255, 255, 255, 0.50);
+    margin-left: 0.3rem;
+}
+
+.currencyItem svg {
+    margin-right: 1rem;
+}
+
+.currencyItem img {
+    width: 35px;
+    height: 35px;
+    margin-right: 1rem;
+}
+
+.bottomBtnContainer {
+    margin-top: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 1450px) {
+    .currency {
+        width: 531px;
+        height: 762px;
+        border-radius: 23.743px;
+        background: #181818;
+        padding: 25px 40px 0 41px;
+    }
+
+    .currencyExit {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 26px;
+        border-bottom: 1px solid #FFF;
+    }
+
+    .currencyExit svg:first-child {
+        width: 11.359px;
+        height: 13.983px;
+    }
+
+    .currencyExit svg:last-child {
+        width: 23.743px;
+        height: 23.743px;
+    }
+
+    .hint {
+        text-transform: uppercase;
+        margin-top: 30px;
+        color: #FFF;
+        font-family: 'MullerRegular', sans-serif;
+        font-size: 24px;
+        font-weight: 500;
+        font-style: normal;
+        line-height: normal;
+        opacity: 0.54;
+    }
+
+    .currencyChoice {
+        overflow: scroll;
+        margin-top: 85px;
+        height: 560px;
+    }
+
+    .currencyItem {
+        color: #FFF;
+        font-family: 'MullerRegular';
+        font-size: 24.341px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        padding: 28px 0;
+    }
+
+    .currencyItem span {
+        color: rgba(255, 255, 255, 0.50);
+        margin-left: 0.6rem;
+    }
+
+    .currencyItem svg {
+        width: 60.853px;
+        height: 60.853px;
+        margin-right: 28px;
+    }
+
+    .currencyItem img {
+        width: 60.853px;
+        height: 60.853px;
+        margin-right: 28px;
+    }
+
+    .borderBottom {
+        border-bottom: 1px solid rgba(95, 102, 118);
+        width: 100%;
+        top: 6.4rem;
+        left: 1rem;
+    }
+
+    .bottomBtnContainer {
+        display: none;
+    }
+}
+
+@media (max-width: 800px) {
+    .currency {
+        width: 664px;
+        height: 98vh;
+        border-radius: 0;
+        padding: 38px 31px 0 31px;
+        background: #222;
+    }
+
+    .topForPhone {
+        display: flex;
+    }
+
+    .currencyExit {
+        display: none;
+    }
+
+    .exitMenu {
+        display: flex;
+        align-items: center;
+        color: #2BA9F2;
+        font-family: 'SF UI Text Light';
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 17px;
+        letter-spacing: -0.5px;
+    }
+
+    .exitMenu svg {
+        margin-right: 7px;
+    }
+
+    .transaction {
+        margin-left: 138px;
+        color: #FFF;
+        font-family: 'SF UI Text Regular';
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+
+    .hint {
+        text-transform: none;
+        opacity: 1;
+        margin-top: 38px;
+        color: #5F6676;
+        font-family: 'SF UI Text Light';
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .currencyChoice {
+        overflow: hidden;
+        height: auto;
+        margin-top: 14px;
+    }
+
+    .currencyItem {
+        color: #FFF;
+        font-family: 'SF UI Text Light';
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        padding: 21px 0;
+    }
+
+    .currencyItem span {
+        margin-left: 0.3rem;
+    }
+
+    .currencyItem svg {
+        width: 56.212px;
+        height: 56.212px;
+        margin-right: 22px;
+    }
+
+    .currencyItem img {
+        width: 56.212px;
+        height: 56.212px;
+        margin-right: 22px;
+    }
+
+    .borderBottom {
+        border-bottom: 1px solid rgba(95, 102, 118, 0.29);
+        width: 100%;
+        top: 6rem;
+        left: 0rem;
+    }
+
+    .bottomBtnContainer {
+        display: none;
+    }
+}
+
+@media (max-width: 400px) {
+    .currency {
+        width: 364px;
+        padding: 10px 15px 0 15px;
+    }
+
+    .exitMenu {
+        font-size: 15px;
+    }
+
+    .exitMenu svg {
+        margin-right: 8px;
+    }
+
+    .transaction {
+        margin-left: 55px;
+        font-size: 20px;
+    }
+
+    .hint {
+        margin-top: 21px;
+        font-size: 14px;
+    }
+
+    .currencyChoice {
+        margin-top: 25px;
+    }
+
+    .currencyItem {
+        font-size: 13px;
+        padding: 12px 0;
+    }
+
+    .currencyItem svg {
+        width: 32px;
+        height: 32px;
+        margin-right: 13px;
+    }
+
+    .currencyItem img {
+        width: 32px;
+        height: 32px;
+        margin-right: 13px;
+    }
+
+    .borderBottom {
+        width: 104%;
+        top: 3.4rem;
+    }
+
+}

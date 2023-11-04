@@ -1,0 +1,83 @@
+@media (max-width: 800px) {
+    .exitMenu {
+        display: flex;
+        align-items: center;
+        color: #2BA9F2;
+        font-family: 'SF UI Text Light';
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 17px;
+        letter-spacing: -0.5px;
+    }
+
+    .exitMenu svg {
+        margin-right: 7px;
+    }
+
+    .menu {
+        color: #FFF;
+        font-family: 'SF UI Text Regular';
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu span {
+        margin-top: 20px;
+    }
+
+    #borderLine {
+        stroke: rgba(95, 102, 118);
+        margin: 30px 0;
+    }
+
+    .info {
+        display: flex;
+        flex-direction: column;
+        color: #FFF;
+        font-family: 'SF UI Text Light';
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .info span {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 400px) {
+    .exitMenu {
+        font-size: 15px;
+    }
+
+    .exitMenu svg {
+        margin-right: 8px;
+    }
+
+    .menu {
+        font-size: 20px;
+    }
+
+    .menu span {
+        margin-top: 18px;
+    }
+
+    #borderLine {
+        margin: 32px 0;
+    }
+
+    .info {
+        font-size: 20px;
+    }
+
+    .info span {
+        margin-top: 18px;
+    }
+
+}

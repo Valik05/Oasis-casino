@@ -1,0 +1,385 @@
+.footer {
+    position: relative;
+    background: #181818;
+    font-family: 'MullerRegular', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    line-height: normal;
+    color: #FFF;
+    height: 648px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#titleForPhone {
+    display: none;
+}
+
+.top {
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.slider {
+    position: absolute;
+    top: 9em;
+    right: 2rem;
+}
+
+.center {
+    display: flex;
+    font-size: 20px;
+    justify-content: space-around;
+}
+
+.center aside {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+}
+
+.center aside span:first-child {
+    padding-top: 0px;
+}
+
+.center aside span {
+    padding-top: 32px;
+}
+
+.center section {
+    width: 60%;
+}
+
+.bottom {
+    font-size: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.svgLetter {
+    margin-right: 14px;
+}
+
+.cInCircle {
+    margin-right: 12px;
+    opacity: 1;
+}
+
+.bottom span {
+    display: flex;
+    align-items: center;
+    opacity: 0.6;
+}
+
+.bottom span:first-child {
+    opacity: 1;
+}
+
+.bottomForIPad {
+    display: none;
+}
+
+.sliderForIPad {
+    display: none;
+}
+
+@media (max-width: 1450px) {
+    .footer {
+        height: auto;
+        color: #FFF;
+        font-family: 'SF UI Text Light';
+        font-weight: 400;
+        padding: 32px 43px 105px 43px;
+    }
+
+    .top span {
+        display: none;
+    }
+
+    .slider {
+        top: 3em;
+        right: 3rem;
+    }
+
+    .slider svg {
+        width: 94.254px;
+        height: 8.196px;
+    }
+
+    .center {
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+
+    .center section p {
+        display: none;
+    }
+
+    .center aside {
+        width: 20%;
+        font-size: 22px;
+    }
+
+    .center aside span:first-child {
+        padding-top: 0px;
+    }
+
+    .center aside span {
+        padding-top: 20px;
+    }
+
+    .center section {
+        width: 90%;
+        padding-bottom: 30px;
+    }
+
+    .bottom {
+        padding: 38px 0 0 0;
+        justify-content: space-between;
+    }
+
+    .svgLetter {
+        width: 30.949px;
+        height: 24px;
+        flex-shrink: 0;
+        margin-right: 12px;
+    }
+
+    .cInCircle {
+        width: 22.508px;
+        height: 22.508px;
+        flex-shrink: 0;
+        margin-right: 12px;
+        opacity: 1;
+    }
+
+    .bottom span {
+        color: #FFF;
+        font-family: 'SF UI Text Light';
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        display: flex;
+        align-items: center;
+        opacity: 1;
+        width: fit-content;
+    }
+
+    .bottom div span {
+        margin-top: 0;
+        opacity: 0.6;
+    }
+}
+
+@media (max-width: 1100px) {
+    .footer {
+        padding: 23px 37px 77px 31px;
+    }
+
+    .slider {
+        top: 2em;
+        right: 2rem;
+    }
+
+    .slider svg {
+        width: 67px;
+        height: 5.826px;
+    }
+
+    .center aside {
+        width: 20%;
+        font-size: 15px;
+    }
+
+    .center aside span:first-child {
+        padding-top: 0px;
+    }
+
+    .center aside span {
+        padding-top: 15px;
+    }
+
+    .center section {
+        font-size: 13px;
+        width: 90%;
+        padding-bottom: 30px;
+    }
+
+    .bottom {
+        padding: 28px 0 0 0;
+    }
+
+    .svgLetter {
+        width: 22px;
+        height: 12.041px;
+        margin-right: 9px;
+    }
+
+    .cInCircle {
+        width: 16px;
+        height: 16px;
+        margin-right: 9px;
+    }
+
+    .bottom span {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 800px) {
+    .footer {
+        padding: 23px 31px 58px 31px;
+    }
+
+    .slider {
+        display: none;
+    }
+
+    .center {
+        justify-content: flex-start;
+    }
+
+    .center aside {
+        width: 25%;
+        font-size: 15px;
+    }
+
+    .center aside span:first-child {
+        padding-top: 0px;
+    }
+
+    .center aside span {
+        padding-top: 15px;
+    }
+
+    .center section {
+        font-size: 13px;
+        width: 70%;
+        padding-bottom: 0;
+    }
+
+    .bottom {
+        display: none;
+    }
+
+    .bottomForIPad {
+        position: relative;
+        font-size: 14px;
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+    }
+
+    .bottomForIPad div {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        display: flex;
+    }
+
+    .bottomForIPad div span {
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .bottomForIPad div:nth-child(2) {
+        margin-top: 28px;
+    }
+
+    .bottomForIPad div div {
+        flex-direction: row;
+    }
+
+    .bottomForIPad div div span {
+        opacity: 0.6;
+    }
+
+    .svgLetter {
+        width: 25px;
+        height: 15px;
+        flex-shrink: 0;
+    }
+
+    .cInCircle {
+        width: 16px;
+        height: 16px;
+        flex-shrink: 0;
+    }
+
+    .sliderForIPad {
+        width: 67px;
+        height: 5.826px;
+        display: block;
+        position: absolute;
+        top: 2em;
+        right: -12rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .footer {
+        height: auto;
+        flex-direction: column-reverse;
+        padding: 0;
+    }
+
+    .center {
+        display: none;
+    }
+
+    .top {
+        display: none;
+    }
+
+    .bottom {
+        display: flex;
+        flex-direction: column;
+        padding: 16px 0 0 15px;
+    }
+
+    .bottom svg {
+        width: 16px;
+        height: 16px;
+        margin-right: 9px;
+    }
+
+    .bottom span {
+        color: #FFF;
+        font-family: 'SF UI Text Light';
+        margin-top: 9px;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        display: flex;
+        align-items: center;
+        opacity: 1;
+        width: fit-content;
+    }
+
+    .bottom div {
+        margin-top: 9px;
+    }
+
+    .bottom div span {
+        margin-top: 0;
+        opacity: 0.6;
+    }
+    
+    .bottomForIPad {
+        display: none;
+    }
+
+    #titleForPhone {
+        color: #FFF;
+        font-family: 'SF UI Text Regular';
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        display: flex;
+    }
+}

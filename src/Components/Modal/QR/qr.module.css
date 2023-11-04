@@ -1,0 +1,417 @@
+.QRContainer {
+    flex-shrink: 0;
+    flex-grow: 0;
+    width: 100%;
+    min-height: 100%;
+    margin: auto;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.QR {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem 2rem 0 2rem;
+    width: 30%;
+    flex-shrink: 0;
+    border-radius: 30px;
+    background: #181818;
+}
+
+.topForPhone {
+    display: none;
+}
+
+.QrExit {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #FFF;
+}
+
+.QrExit svg {
+    cursor: pointer;
+}
+
+.hint {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.hint svg {
+    margin-right: 1rem;
+}
+
+.hint span {
+    margin-right: 1rem;
+    padding-top: 0.3rem;
+    color: #FFF;
+    font-family: 'MullerBold';
+    font-size: 20px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: normal;
+}
+
+.QRImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+
+.QRImg img {
+    width: 250px;
+    height: 250px;
+}
+
+.note {
+    margin-top: 1rem;
+    color: rgba(255, 255, 255, 0.70);
+    text-align: center;
+    font-family: 'MullerRegular';
+    font-size: 22px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: normal;
+}
+
+.note span {
+    font-family: 'MullerBold';
+    font-weight: 700;
+    color: #FFF;
+}
+
+.secondNote {
+    margin-top: 2rem;
+    font-family: 'MullerBold';
+    font-weight: 700;
+}
+
+.oneTimeUseCode {
+    margin-top: 2rem;
+    border-radius: 30px 30px 0px 0px;
+    background: #222;
+}
+
+.info {
+    color: #FFF;
+    padding: 1.3rem 1rem 0.5rem 1rem;
+    font-family: 'MullerMedium';
+    font-size: 14px;
+    font-style: normal;
+    line-height: normal;
+    font-weight: 700;
+}
+
+.code {
+    color: #FFF;
+    padding: 0.5rem 1rem 1rem 1rem;
+    font-family: 'MullerLight';
+    font-weight: 300;
+    font-size: 14px;
+    letter-spacing: 1px;
+    opacity: 0.5;
+}
+
+@media (max-width: 1450px) {
+    .QR {
+        width: 612.563px;
+        height: 787.468px;
+        display: grid;
+        padding: 25px 40px 0 41px;
+        border-radius: 23.743px;
+        background: #181818;
+    }
+
+    .QrExit {
+        padding-bottom: 26px;
+        border-bottom: 2px solid #FFF;
+    }
+
+    .QrExit svg {
+        width: 23.849px;
+        height: 23.849px;
+        flex-shrink: 0;
+    }
+
+    .hint {
+        margin-top: 48px;
+    }
+
+    .hint svg {
+        margin-right: 21px;
+    }
+
+    .hint span {
+        padding-top: 0.1rem;
+        font-family: 'MullerBold';
+        font-size: 23px;
+    }
+
+    .QRImg img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .note {
+        margin-top: 30px;
+        font-size: 25px;
+        font-weight: 400;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .note div {
+        width: 90%;
+    }
+
+    .note span {
+        font-family: 'MullerBold';
+        font-weight: 700;
+        color: #FFF;
+    }
+
+    .secondNote {
+        margin-top: 2rem;
+        font-family: 'MullerBold';
+        font-weight: 700;
+    }
+
+    .oneTimeUseCode {
+        margin-top: 42px;
+        border-radius: 23.849px 23.849px 0px 0px;
+    }
+
+    .info {
+        color: #FFF;
+        padding: 15px 0 11px 19px;
+        font-size: 16px;
+    }
+
+    .code {
+        color: #FFF;
+        padding: 0 0 26px 19px;
+        font-size: 16px;
+        letter-spacing: 1px;
+        opacity: 0.5;
+    }
+
+
+}
+
+@media (max-width: 1100px) {
+    .note {
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 800px) {
+    .QR {
+        width: 664px;
+        height: 98vh;
+        border-radius: 0;
+        display: block;
+        padding: 43px 31px 0 31px;
+        background: #222;
+    }
+
+    .topForPhone {
+        display: flex;
+    }
+
+    .QrExit {
+        display: none;
+    }
+
+    .exitMenu {
+        display: flex;
+        align-items: center;
+        color: #2BA9F2;
+        font-family: 'SF UI Text Light';
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 17px;
+        letter-spacing: -0.5px;
+    }
+
+    .exitMenu svg {
+        margin-right: 7px;
+    }
+
+    .qrCode {
+        margin-left: 178px;
+        color: #FFF;
+        font-family: 'SF UI Text Regular';
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+
+    .hint {
+        margin-top: 38px;
+        justify-content: flex-start;
+    }
+
+    .hint span {
+        padding-top: 0;
+        opacity: 1;
+        color: #5F6676;
+        font-family: 'SF UI Text Light';
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .hint svg {
+        display: none;
+    }
+
+    .QRImg {
+        margin-top: 50px;
+    }
+
+    .note {
+        margin-top: 22px;
+        color: #5F6676;
+        text-align: center;
+        font-family: 'SF UI Text Light';
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .note div {
+        width: 80%;
+    }
+
+    .note span {
+        color: #FFF;
+        font-family: 'SF UI Text Light';
+        font-size: 24px;
+        font-weight: 400;
+    }
+
+    .secondNote {
+        margin-top: 2rem;
+        color: #5F6676;
+        text-align: center;
+        font-family: 'SF UI Text Light';
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .oneTimeUseCode {
+        margin-top: 49px;
+    }
+
+    .info {
+        padding: 0;
+        color: #5F6676;
+        font-family: 'SF UI Text Light';
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .code {
+        margin-top: 21px;
+        border-radius: 12.804px;
+        background: #181818;
+        padding: 26px 0;
+        color: #2BA9F2;
+        text-align: center;
+        font-family: 'SF UI Text Light';
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.7px;
+        opacity: 1;
+    }
+}
+
+@media (max-width: 400px) {
+    .QR {
+        width: 364px;
+        padding: 10px 15px 0 15px;
+    }
+
+    .exitMenu {
+        font-size: 15px;
+    }
+
+    .exitMenu svg {
+        margin-right: 8px;
+    }
+
+    .qrCode {
+        margin-left: 55px;
+        font-size: 20px;
+    }
+
+    .hint {
+        margin-top: 21px;
+    }
+
+    .hint span {
+        font-size: 14px;
+    }
+
+    .QRImg {
+        margin-top: 26px;
+    }
+
+    .QRImg img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .note {
+        font-size: 14px;
+    }
+
+    .note span {
+        font-size: 14px;
+    }
+
+    .firstNote {
+        width: 281px;
+    }
+
+    .secondNote {
+        width: 281px;
+        font-size: 14px;
+    }
+
+    .oneTimeUseCode {
+        margin-top: 28px;
+    }
+
+    .info {
+        font-size: 13px;
+    }
+
+    .code {
+        margin-top: 9px;
+        border-radius: 7px;
+        padding: 18px 0;
+        font-size: 14px;
+    }
+}

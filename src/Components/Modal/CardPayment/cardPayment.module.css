@@ -1,0 +1,696 @@
+.cardPaymentContainer {
+    flex-shrink: 0;
+    flex-grow: 0;
+    width: 100%;
+    min-height: 100%;
+    margin: auto;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.topForPhone {
+    display: none;
+}
+
+.cardPayment {
+    display: flex;
+    flex-direction: column;
+    padding: 1em 1rem;
+    width: 35%;
+    flex-shrink: 0;
+    border-radius: 30px;
+    background: #181818;
+}
+
+.cardPaymentExit {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding-bottom: 1em;
+    border-bottom: 2px solid #fff;
+
+}
+
+.cardPaymentExit svg {
+    cursor: pointer;
+}
+
+.back {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    color: #FFF;
+    font-family: 'MullerRegular';
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.back svg {
+    margin-right: 0.5rem;
+}
+
+
+.bottomDesign {
+    position: relative;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.hint {
+    margin-top: 1rem;
+    color: #FFF;
+    font-family: 'MullerRegular', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+}
+
+.hint span {
+    opacity: 0.54;
+    margin-left: 0.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.moneyAmount {
+    display: flex;
+    font-size: 48px;
+    font-family: 'MullerBold', sans-serif;
+    font-weight: 700;
+    justify-content: center;
+}
+
+.customInput {
+    display: flex;
+    align-items: flex-end;
+    font-family: 'MullerBold', sans-serif;
+    color: #FFF;
+    font-size: 48px;
+    font-style: normal;
+    line-height: normal;
+    background: #181818;
+}
+
+.customInput[placeholder]:empty::before {
+    content: attr(placeholder);
+    color: #555;
+    border: none;
+    outline: none;
+    font-family: 'MullerBold', sans-serif;
+}
+
+.customInput[placeholder]:empty:focus::before {
+    content: "";
+    border: none;
+    font-family: 'MullerBold', sans-serif;
+    outline: none;
+}
+
+.customInput:focus {
+    content: "";
+    border: none;
+    outline: none;
+}
+
+.amountChoice {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 1.6rem;
+}
+
+.amountItem {
+    position: relative;
+    width: 160px;
+    height: 95px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    font-family: 'MullerBold';
+    font-size: 26px;
+    font-weight: 700;
+    flex-shrink: 0;
+    border-radius: 30px;
+    background: linear-gradient(90deg, #458BDA 0%, #59AFF1 100%);
+    z-index: 5;
+    margin-bottom: 1rem;
+}
+
+.amountItem:hover {
+    background: linear-gradient(90deg, #36679e 0%, #4d92c7 100%);
+    cursor: pointer;
+}
+
+.popularHint {
+    top: -0.4rem;
+    position: absolute;
+    color: #181818;
+    font-family: 'MullerBold';
+    font-size: 10px;
+    font-weight: 700;
+    width: 124px;
+    height: 24px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-shrink: 0;
+    border-radius: 40px;
+    background: #FFF;
+}
+
+.popularHintForPhone {
+    display: none;
+}
+
+.firstWave {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    left: -4rem;
+    z-index: 0;
+}
+
+.shadowRectangle1 {
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    transform: rotate(27.747deg);
+    flex-shrink: 0;
+    background: #181818;
+    filter: blur(12.5px);
+    top: -1.4rem;
+    left: 6rem;
+    z-index: 1;
+}
+
+.secondWave {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 2.6rem;
+    right: -1rem;
+    z-index: 0;
+}
+
+.shadowRectangle2 {
+    position: absolute;
+    width: 150px;
+    height: 50px;
+    transform: rotate(-176.646deg);
+    flex-shrink: 0;
+    background: #181818;
+    filter: blur(12.5px);
+    right: 0.5rem;
+    top: 1rem;
+    z-index: 1;
+}
+
+.websiteTitle {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: #2BA9F2;
+    font-family: 'CopperplateRegular', sans-serif;
+    font-size: 38px;
+    font-style: normal;
+    line-height: normal;
+    text-shadow: 0px 0px 13px rgba(43, 169, 242, 0.66);
+}
+
+@media (max-width: 1450px) {
+    .cardPayment {
+        width: 612.563px;
+        height: 787.468px;
+        padding: 25px 40px 29px 41px;
+        border-radius: 23.743px;
+        background: #181818;
+    }
+
+    .cardPaymentExit svg {
+        width: 23.743px;
+        height: 23.743px;
+    }
+
+    .cardPaymentExit {
+        border-bottom: 1.5px solid #fff;
+        padding-bottom: 26px;
+    }
+
+    .hint {
+        margin-top: 26px;
+        color: #FFF;
+        font-family: 'MullerRegular', sans-serif;
+        font-size: 23px;
+        font-weight: 500;
+        display: flex;
+        justify-content: center;
+    }
+
+    .hint svg {
+        width: 19.849px;
+        height: 19.849px;
+    }
+
+    .hint span {
+        opacity: 0.54;
+        margin-left: 11px;
+        display: flex;
+        align-items: center;
+    }
+
+    .moneyAmount {
+        color: #FFF;
+        font-family: 'MullerRegular';
+        font-size: 76.221px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin-top: 34px;
+    }
+
+    .customInput {
+        display: flex;
+        align-items: flex-end;
+        color: #FFF;
+        font-family: 'MullerRegular';
+        font-size: 76.221px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        background: transparent;
+    }
+
+    .customInput[placeholder]:empty::before {
+        color: rgba(255, 255, 255, 0.43);
+    }
+
+    .customInput:focus {
+        content: "";
+        border: none;
+        outline: none;
+        color: #FFF;
+        font-family: 'MullerRegular';
+        font-size: 76.221px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .amountChoice {
+        margin-top: 39px;
+    }
+
+    .amountItem {
+        position: relative;
+        width: 180.734px;
+        height: 100.276px;
+        flex-shrink: 0;
+        color: #FFF;
+        font-family: 'MullerRegular';
+        font-size: 31.759px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        border-radius: 23.819px;
+        z-index: 5;
+        margin-bottom: 15px;
+    }
+
+    .popularHint {
+        top: -0.5rem;
+        color: #181818;
+        font-family: 'MullerBold';
+        font-size: 12.704px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        width: 130.211px;
+        height: 19.055px;
+        flex-shrink: 0;
+        flex-shrink: 0;
+        border-radius: 31.759px;
+        background: #FFF;
+    }
+
+    .popularHintForPhone {
+        top: 5.4rem;
+        color: #181818;
+        font-family: 'MullerBold';
+        font-size: 12.704px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        width: 130.211px;
+        height: 19.055px;
+        flex-shrink: 0;
+        flex-shrink: 0;
+        border-radius: 31.759px;
+        background: #FFF;
+        position: absolute;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+
+    #arrow {
+        display: none;
+    }
+
+    .bottomDesign {
+        height: 400px;
+    }
+
+    .firstWave {
+        width: 500.497px;
+        height: 550.36px;
+        top: -20rem;
+        left: -7rem;
+    }
+
+    .shadowRectangle1 {
+        width: 150px;
+        height: 50px;
+        top: -9rem;
+        left: 11.2rem;
+    }
+
+    .secondWave {
+        width: 250px;
+        height: 350px;
+        top: -0.4rem;
+        right: -2.47rem;
+    }
+
+    .shadowRectangle2 {
+        right: 0rem;
+        top: -2rem;
+    }
+
+    .websiteTitle {
+        margin-top: 14rem;
+    }
+
+}
+
+@media (max-width: 1100px) {
+    .cardPayment {
+        width: 612.563px;
+        height: 787.468px;
+    }
+}
+
+@media (max-width: 800px) {
+    .cardPayment {
+        width: 667px;
+        height: 98vh;
+        border-radius: 0;
+        padding: 38px 31px 34px 29px;
+        background: #222;
+    }
+
+    .topForPhone {
+        display: flex;
+    }
+
+    .cardPaymentExit {
+        display: none;
+    }
+
+    .top {
+        display: flex;
+    }
+
+    .exitMenu {
+        display: flex;
+        align-items: center;
+        color: #2BA9F2;
+        font-family: 'SF UI Text Light';
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 17px;
+        letter-spacing: -0.5px;
+    }
+
+    .exitMenu svg {
+        margin-right: 7px;
+    }
+
+    .balance {
+        margin-left: 141px;
+        color: #FFF;
+        font-family: 'SF UI Text Regular';
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+
+    .hint {
+        margin-top: 38px;
+        display: block;
+    }
+
+    .hint span {
+        color: #5F6676;
+        font-family: 'SF UI Text Light';
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .hint svg {
+        display: none;
+    }
+
+    .moneyAmount {
+        color: #FFF;
+        font-family: 'SF UI Text Regular';
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin-top: 41px;
+    }
+
+    .customInput {
+        display: flex;
+        align-items: flex-end;
+        color: #FFF;
+        font-family: 'SF UI Text Regular';
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        background: #222;
+    }
+
+    .customInput[placeholder]:empty::before {
+        color: #FFF;
+    }
+
+    .customInput:focus {
+        content: "";
+        border: none;
+        font-family: 'SF UI Text Regular';
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        outline: none;
+    }
+
+    .amountChoice {
+        margin-top: 70px;
+    }
+
+    .amountItem {
+        position: relative;
+        width: 203.041px;
+        height: 115.24px;
+        flex-shrink: 0;
+        color: #FFF;
+        font-family: 'SF UI Text Light';
+        font-size: 38px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        border-radius: 16.463px;
+        z-index: 5;
+        margin-bottom: 25px;
+    }
+
+    .popularHint {
+        top: 5.5rem;
+        color: #222;
+        font-family: 'SF UI Text Light';
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        width: 137.19px;
+        height: 26.523px;
+        flex-shrink: 0;
+        border-radius: 9px 9px 0 0;
+        background: #FFF;
+    }
+
+    .popularHintForPhone {
+        top: 5.5rem;
+        color: #222;
+        font-family: 'SF UI Text Light';
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        width: 137.19px;
+        height: 26.523px;
+        flex-shrink: 0;
+        border-radius: 9px 9px 0 0;
+        background: #FFF;
+        position: absolute;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+
+
+    #arrow {
+        display: none;
+    }
+
+    .bottomDesign {
+        height: 400px;
+    }
+
+    .firstWave {
+        width: 500.497px;
+        height: 550.36px;
+        top: -12rem;
+        left: -7rem;
+    }
+
+    .shadowRectangle1 {
+        width: 150px;
+        height: 50px;
+        top: -1rem;
+        left: 11.2rem;
+    }
+
+    .secondWave {
+        width: 250px;
+        height: 350px;
+        top: 5.6rem;
+        right: -2.47rem;
+    }
+
+    .shadowRectangle2 {
+        right: 0rem;
+        top: 4rem;
+    }
+
+    .websiteTitle {
+        margin-top: 30rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .cardPayment {
+        width: 363px;
+        padding: 10px 15px 0 15px;
+    }
+
+    .exitMenu {
+        font-size: 15px;
+    }
+
+    .exitMenu svg {
+        margin-right: 8px;
+    }
+
+    .balance {
+        margin-left: 55px;
+        font-size: 20px;
+    }
+
+    .hint {
+        margin-top: 21px;
+    }
+
+    .hint span {
+        font-size: 14px;
+    }
+
+    .moneyAmount {
+        font-size: 36px;
+        margin-top: 21px;
+    }
+
+    .customInput {
+        font-size: 36px;
+    }
+
+    .customInput:focus {
+        font-size: 36px;
+    }
+
+    .amountChoice {
+        margin-top: 39px;
+    }
+
+    .amountItem {
+        width: 111.145px;
+        height: 63px;
+        font-size: 21.17px;
+        border-radius: 9px;
+        margin-bottom: 14px;
+    }
+
+    .popularHint {
+        top: 3rem;
+        font-size: 8px;
+        width: 75px;
+        height: 14.5px;
+    }
+
+    .popularHintForPhone {
+        top: 3rem;
+        font-size: 8px;
+        width: 75px;
+        height: 14.5px;
+    }
+
+    .firstWave {
+        width: 300px;
+        height: 300px;
+        top: -6rem;
+    }
+
+    .shadowRectangle1 {
+        display: none;
+    }
+
+    .secondWave {
+        width: 200px;
+        height: 200px;
+        top: 5.6rem;
+        right: -1rem;
+
+    }
+
+    .shadowRectangle2 {
+        display: none;
+    }
+
+    .websiteTitle {
+        margin-top: 70px;
+    }
+}

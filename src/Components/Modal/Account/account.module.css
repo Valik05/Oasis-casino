@@ -1,0 +1,582 @@
+.accountContainer {
+    flex-shrink: 0;
+    flex-grow: 0;
+    width: 100%;
+    min-height: 100%;
+    margin: auto;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.account {
+    display: flex;
+    flex-direction: column;
+    padding: 1em 1rem;
+    width: 35%;
+    flex-shrink: 0;
+    border-radius: 30px;
+    background: #181818;
+}
+
+.topForPhone {
+    display: none;
+}
+
+.accountExit {
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    padding-bottom: 1.5em;
+    border-bottom: 2px solid #fff;
+}
+
+.accountExit svg {
+    cursor: pointer;
+}
+
+.moneyAmount {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+    color: #FFF;
+}
+
+.moneyAmount svg {
+    margin-left: 1rem;
+}
+
+.moneyAmount div:first-child {
+    font-family: 'MullerRegular';
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.moneyAmount div:last-child {
+    font-size: 41px;
+    font-family: 'MullerBold';
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+}
+
+.currencyChoice {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    color: #FFF;
+    font-family: 'MullerBold', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding: 1rem;
+    border-radius: 30px;
+    border: 2px solid #2BA9F2;
+}
+
+.dollar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+    border-bottom: 1px solid #fff;
+    cursor: pointer;
+}
+
+.ruble {
+    border-top: 1px solid #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+    cursor: pointer;
+}
+
+.hint {
+    margin-top: 2rem;
+    color: #FFF;
+    font-family: 'MullerRegular', sans-serif;
+    opacity: 0.5;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.cryptocurrency {
+    display: flex;
+    margin-top: 1rem;
+    padding: 1.3rem 1.5em;
+    justify-content: space-between;
+    color: #FFF;
+    font-family: 'MullerBold', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    border-radius: 30px;
+    border: 0px solid #000;
+    background: #2BA9F2;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.cryptocurrency span {
+    display: flex;
+    align-items: center;
+}
+
+.bottomDesign {
+    position: relative;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.firstWave {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    left: -4rem;
+    z-index: 0;
+}
+
+.shadowRectangle1 {
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    transform: rotate(27.747deg);
+    flex-shrink: 0;
+    background: #181818;
+    filter: blur(12.5px);
+    top: -1.4rem;
+    left: 6rem;
+    z-index: 1;
+}
+
+.secondWave {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 2.6rem;
+    right: -1rem;
+    z-index: 0;
+}
+
+.shadowRectangle2 {
+    position: absolute;
+    width: 150px;
+    height: 50px;
+    transform: rotate(-176.646deg);
+    flex-shrink: 0;
+    background: #181818;
+    filter: blur(12.5px);
+    right: 0.5rem;
+    top: 1rem;
+    z-index: 1;
+}
+
+.websiteTitle {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: #2BA9F2;
+    font-family: 'CopperplateRegular', sans-serif;
+    font-weight: 400;
+    font-size: 38px;
+    font-style: normal;
+    line-height: normal;
+    text-shadow: 0px 0px 13px rgba(43, 169, 242, 0.66);
+}
+
+@media (max-width: 1450px) {
+    .account {
+        width: 612.563px;
+        height: 787.468px;
+        padding: 25px 40px 29px 41px;
+        border-radius: 23.743px;
+        background: #181818;
+    }
+
+    .accountExit svg {
+        width: 23.743px;
+        height: 23.743px;
+    }
+
+    .accountExit {
+        border-bottom: 1.5px solid #fff;
+        padding-bottom: 26px;
+    }
+
+    .moneyAmount {
+        padding-top: 38px;
+    }
+
+    .moneyAmount svg {
+        margin-left: 12px;
+    }
+
+    .moneyAmount div:first-child {
+        font-size: 23px;
+    }
+
+    .moneyAmount div:last-child {
+        font-size: 32px;
+    }
+
+    .currencyChoice {
+        font-size: 15.828px;
+        font-weight: 800;
+        margin-top: 26px;
+        padding: 0 15px 0 15px;
+        border-radius: 23.743px;
+        background: #181818;
+    }
+
+    .currencyChoice svg {
+        width: 15.433px;
+        height: 9.497px;
+    }
+
+    .dollar {
+        padding: 15px 0 11px 0;
+    }
+
+    .ruble {
+        padding: 11px 0 15px 0;
+    }
+
+    .hint {
+        margin-top: 26px;
+        font-family: 'MullerLight', sans-serif;
+        font-size: 15px;
+        opacity: 1;
+        font-weight: 300;
+    }
+
+    .cryptocurrency {
+        margin-top: 26px;
+        padding: 17px 23px;
+        font-size: 15px;
+        border-radius: 23.743px;
+        border: 0px solid #000;
+        background: #2BA9F2;
+    }
+
+    .cryptocurrency svg {
+        width: 20px;
+        height: 20px;
+        margin-left: 5px;
+    }
+
+    #arrow {
+        width: 10px;
+        height: 10px;
+        margin-left: 0;
+    }
+
+    .bottomDesign {
+        height: 400px;
+    }
+
+    .firstWave {
+        width: 500.497px;
+        height: 550.36px;
+        left: -7.37rem;
+        top: -12rem;
+    }
+
+    .shadowRectangle1 {
+        width: 150px;
+        height: 50px;
+        top: -0.6rem;
+        left: 10.2rem;
+    }
+
+    .secondWave {
+        width: 250px;
+        height: 350px;
+        top: 7.6rem;
+        right: -2.47rem;
+    }
+
+    .shadowRectangle2 {
+        right: 0.5rem;
+        top: 6rem;
+    }
+
+    .websiteTitle {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .account {
+        width: 612.563px;
+        height: 787.468px;
+    }
+}
+
+@media (max-width: 800px) {
+    .account {
+        width: 667px;
+        height: 98vh;
+        border-radius: 0;
+        padding: 38px 31px 34px 29px;
+        background: #222;
+    }
+
+    .topForPhone {
+        display: flex;
+    }
+
+    .accountExit {
+        display: none;
+    }
+
+    .top {
+        display: flex;
+    }
+
+    .exitMenu {
+        display: flex;
+        align-items: center;
+        color: #2BA9F2;
+        font-family: 'SF UI Text Light';
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 17px;
+        letter-spacing: -0.5px;
+    }
+
+    .exitMenu svg {
+        margin-right: 7px;
+    }
+
+    .balance {
+        margin-left: 141px;
+        color: #FFF;
+        font-family: 'SF UI Text Regular';
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+
+    .moneyAmount {
+        padding-top: 0;
+        margin-top: 79px;
+    }
+
+    .moneyAmount svg {
+        margin-left: 19px;
+    }
+
+    .moneyAmount div:first-child {
+        display: none;
+    }
+
+    .moneyAmount div:nth-child(2) {
+        color: #FFF;
+        font-family: 'SF UI Text Regular';
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .currencyChoice {
+        margin-top: 43px;
+        flex-shrink: 0;
+        border-radius: 29.776px;
+        border: 1.985px solid #2BA9F2;
+        padding: 21px 19px 20px 19px;
+    }
+
+    .currencyChoice svg {
+        width: 19.355px;
+        height: 13.966px;
+        flex-shrink: 0;
+    }
+
+    .dollar {
+        padding: 0 0 13px 0;
+        color: #FFF;
+        font-family: 'SF UI Text Light';
+        font-size: 23px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        border-bottom: 2px solid rgba(95, 102, 118, 0.35);
+    }
+
+    .ruble {
+        border-top: none;
+        padding: 14px 0 0 0;
+        color: #FFF;
+        font-family: 'SF UI Text Light';
+        font-size: 23px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .hint {
+        margin-top: 43px;
+        color: #5F6676;
+        font-family: 'SF UI Text Light';
+        opacity: 1;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .cryptocurrency {
+        color: #FFF;
+        font-family: 'SF UI Text Regular';
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        justify-content: center;
+        margin-top: 19px;
+        border-radius: 7px;
+        background: #2BA9F2;
+    }
+
+    .cryptocurrency span {
+        align-items: start;
+    }
+
+    #arrow {
+        display: none;
+    }
+
+    .firstWave {
+        top: -6rem;
+        left: -7rem;
+    }
+
+    .shadowRectangle1 {
+        top: 5rem;
+        background: #222;
+    }
+
+    .secondWave {
+        top: 5.6rem;
+    }
+
+    .shadowRectangle2 {
+        background: #222;
+        right: 0rem;
+        top: 4rem;
+    }
+
+    .websiteTitle {
+        font-size: 56.513px;
+        margin-top: 560px;
+    }
+}
+
+@media (max-width: 400px) {
+    .account {
+        width: 363px;
+        padding: 10px 15px 0 15px;
+    }
+
+    .exitMenu {
+        font-size: 15px;
+    }
+
+    .exitMenu svg {
+        margin-right: 8px;
+    }
+
+    .balance {
+        margin-left: 55px;
+        font-size: 20px;
+    }
+
+    .moneyAmount {
+        margin-top: 39px;
+    }
+
+    .moneyAmount svg {
+        margin-left: 18px;
+    }
+
+    .moneyAmount div:nth-child(2) {
+        font-size: 36px;
+    }
+
+    .currencyChoice {
+        margin-top: 39px;
+        border-radius: 16.245px;
+        padding: 12px 11px 10px 10px;
+    }
+
+    .currencyChoice svg {
+        width: 10.56px;
+        height: 7.62px;
+    }
+
+    .dollar {
+        padding: 0 0 7px 0;
+        font-size: 13px;
+        border-bottom: 1px solid rgba(95, 102, 118, 0.35);
+    }
+
+    .ruble {
+        padding: 7px 0 0 0;
+        font-size: 13px;
+    }
+
+    .hint {
+        margin-top: 30px;
+        font-size: 13px;
+    }
+
+    .cryptocurrency {
+        font-size: 16px;
+        font-weight: 600;
+        margin-top: 9px;
+    }
+
+    .firstWave {
+        width: 300px;
+        height: 300px;
+        top: -6rem;
+        left: -4rem;
+    }
+
+    .shadowRectangle1 {
+        width: 100px;
+        height: 50px;
+        top: -1.4rem;
+        left: 7rem;
+    }
+
+    .secondWave {
+        width: 200px;
+        height: 200px;
+        top: 5.6rem;
+        right: -1rem;
+
+    }
+
+    .shadowRectangle2 {
+        width: 150px;
+        height: 50px;
+        right: 0rem;
+        top: 4rem;
+    }
+
+    .websiteTitle {
+        font-size: 38px;
+        margin-top: 4rem;
+    }
+}

@@ -1,0 +1,37 @@
+.burgerMenuContainer {
+        display: none;
+}
+
+@media (max-width: 800px) {
+    .burgerMenuContainer {
+        width: 666px;
+        height: 98vh;
+        padding: 43px 31px 0 31px;
+        display: flex;
+        flex-direction: column;
+        background: #222;
+        color: #515a63;
+        right: 0;
+        position: absolute;
+        transform: translateX(726px);
+        transition: 0.4s;
+        z-index: 4;
+    }
+
+    .active {
+        transform: translateX(0px);
+    }
+}
+
+@media (max-width: 400px) {
+    .burgerMenuContainer {
+        padding: 13px 0 0 15px;
+        width: 379px;
+        height: 839px;
+        transform: translateX(393px);
+    }
+
+    .active {
+        transform: translateX(0px);
+    }
+}

@@ -1,0 +1,108 @@
+.loaderContainer {
+    background: #222;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.logo {
+    width: 460px;
+    height: 460px;
+    flex-shrink: 0;
+    margin: auto;
+    border-radius: 460px;
+    background: #2BA9F2;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: #2BA9F2 0px 2px 4px 0px, #2BA9F2 0px 2px 16px 0px;
+}
+
+.logoText {
+    color: #FFF;
+    font-family: 'CopperplateRegular', sans-serif;
+    font-size: 92px;
+    font-style: normal;
+    line-height: normal;
+}
+
+.spinner {
+    display: flex;
+    align-self: flex-end;
+    justify-self: right;
+    margin-bottom: 20px;
+    width: 70px;
+    height: 70px;
+    animation: rotation 0.2s linear infinite;
+    flex-shrink: 0;
+}
+
+/* Spinner animation */
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+
+        transform: rotate(-360deg);
+    }
+}
+
+@media (max-width: 1450px) {
+    .logo {
+        margin-right: 26rem;
+    }
+}
+
+@media (max-width: 1100px) {
+    .logo {
+        margin-right: 12rem;
+    }
+}
+
+@media (max-width: 800px) {
+    .logo {
+        margin-right: 4rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .loaderContainer {
+        height: 852px;
+        width: 393px;
+    }
+
+    .logo {
+        margin: auto 1rem auto auto;
+        width: 200px;
+        height: 200px;
+    }
+
+    .logoIcon svg {
+        width: 60px;
+        height: 80px;
+    }
+
+    .logoText {
+        color: #FFF;
+        font-family: 'CopperplateRegular', sans-serif;
+        font-size: 48px;
+        font-style: normal;
+        line-height: normal;
+    }
+
+    .spinner {
+        display: flex;
+        align-self: flex-end;
+        justify-self: right;
+        margin-bottom: 20px;
+        width: 70px;
+        height: 70px;
+        animation: rotation 0.2s linear infinite;
+        flex-shrink: 0;
+    }
+}
